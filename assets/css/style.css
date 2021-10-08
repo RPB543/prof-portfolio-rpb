@@ -1,0 +1,41 @@
+:root{
+    --primary-color: #40E0D0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 20px;
+}
+
+header nav ul li {
+    padding: 0px 20px;
+}
+
+.titles {
+    display: block;
+}
+
+.intro-place p {
+    ;
+}
