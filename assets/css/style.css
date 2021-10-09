@@ -1,5 +1,6 @@
 :root{
     --primary-color: #40E0D0;
+    --secondary-color: #383838;
 }
 
 * {
@@ -7,13 +8,18 @@
     padding: 0;
 }
 
+body {
+    size: 30px;
+}
+
 header {
     color: var(--primary-color);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    background-color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px
+    font-size: 50px;
+    background-color: #000000;
 }
 
 header a {
@@ -25,17 +31,49 @@ header nav ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    font-size: 20px;
+    font-size: 50px;
+    
 }
 
 header nav ul li {
-    padding: 0px 20px;
+    padding: 50px;
+}
+
+/*image bar*/
+.image {
+    background-image: url(../images/backsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/*about me section*/
+#about-me img {
+    width: 250px;
+    height: 500px;
 }
 
 .titles {
-    display: block;
+    display: flex;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 15px;
+    padding-right: 10px;
+    vertical-align: middle;
+    margin-top: 25px;
+    width: 200px;
+    right: 0px;
 }
 
-.intro-place p {
-    ;
+.titles p {
+    color: var(--secondary-color)
+}
+
+.surf-report img {
+    width: 1000px;
+    max-height: auto;
 }
