@@ -1,11 +1,13 @@
 :root{
-    --primary-color: #40E0D0;
+    --primary-color: #DE3163;
     --secondary-color: #383838;
+    --background-color: #000000;
 }
 
 * {
     margin: 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -17,9 +19,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 50px;
-    background-color: #000000;
+    background-color: var(--background-color);
 }
 
 header a {
@@ -41,15 +42,21 @@ header nav ul li {
 
 /*image bar*/
 .image {
-    background-image: url(../images/backsplash.jpg);
+    background-image: url(../images/backsplash.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom 35% right 45%;
     height: 500px;
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-    align-items: flex-start;
 }
+
+.welcome {
+    position: absolute;
+    font-size: 100px;
+    color: var(--primary-color);
+    top: 500px;
+    right: 100px;
+    background-color: var(--background-color);
+    letter-spacing: 1px;
+    }
 
 /*about me section*/
 #about-me img {
@@ -57,11 +64,11 @@ header nav ul li {
     height: 500px;
 }
 
-.titles {
+.titles h2 {
     display: flex;
     color: var(--primary-color);
     text-align: center;
-    font-size: 15px;
+    font-size: 50px;
     padding-right: 10px;
     vertical-align: middle;
     margin-top: 25px;
@@ -69,8 +76,9 @@ header nav ul li {
     right: 0px;
 }
 
-.titles p {
-    color: var(--secondary-color)
+#work-examples h3 {
+    font-size: 30px;
+    color: var(--secondary-color);
 }
 
 .surf-report img {
