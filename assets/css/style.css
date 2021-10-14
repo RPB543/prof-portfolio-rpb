@@ -16,6 +16,7 @@ body {
 
 
 /*Header styles begin*/
+/* also re-used some declarations for footer section*/
 header {
     color: var(--primary-color);
     display: flex;
@@ -25,22 +26,21 @@ header {
     background-color: var(--background-color);
 }
 
-header nav ul {
-    display: flex;
-    justify-content: space-around;
+header nav ul, footer nav ul {
     list-style: none;
     font-size: 1.6vw;
 }
 
-header nav ul li {
+header nav ul li, footer nav ul li {
+    display: inline-block;
     padding: 50px;
 }
 
-header a {
+header a, footer a {
     text-decoration: none;
     color: var(--primary-color);
 }
-header a:hover{
+header a:hover, footer a:hover{
     color: pink;
 }
 
@@ -65,30 +65,27 @@ header a:hover{
 /*about me section*/
 .container-1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .container-1 img {
     width: 500px;
     height: 750px;
-    padding: 50px 100px;
+    margin: 50px 100px;
+    border: solid 1px var(--primary-color);
 }
 
 .container-1 h2 {
     color: var(--primary-color);
-    text-align: center;
-   
+    align-self: left;
     font-size: 50px;
-    padding-right: 10px;
-    margin-top: 25px;
+    padding: 100px;
     width: 1500px;
-    right: 0px;
-    border-right: solid;
+    border-right: solid 5px;
 }
 
 .container-1 p {
     font-size: 30px;
-    text-align: center;
     align-self: center;
 }
 
@@ -105,33 +102,55 @@ header a:hover{
 }
 
 /* work example section*/
-.conatiner-2 {
+.container-2 {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    margin-left: 500px;
+;
 }
 h3 {
+    position:absolute;
     font-size: 35px;
     color: var(--secondary-color);
     background-color: var(--primary-color);
+    background-size: cover;
 }
-
 h4 {
+    position:absolute;
     font-size: 25px;
     color: var(--secondary-color);
     background-color: var(--primary-color);
+    background-size: cover;
+}
+.surf-report {
+    flex-basis: calc(100% - 30px);
 }
 .surf-report img {
     width: 1600px;
-    height: 500px;
+    height: 300px;
     object-fit: cover;
-    object-position: 80%;
+    object-position: 70%;
 }
 .led-wall img, .calculator img, .pastel-puzzle img, .run-buddy img {
     width: 800px;
-    height: 500px;
+    height: 300px;
     object-fit: cover;
+    flex: 0 50% 0;
 }
 .container-2 img:hover {
     opacity: 50%;
+    transform: scale(1.1);
+}
+/* Footer section - remainder with header */
+footer {
+color: var(--primary-color);
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-self: center;
+font-size: 2vw;
+background-color: var(--background-color);
+padding: 10px;
 }
