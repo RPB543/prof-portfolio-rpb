@@ -8,12 +8,11 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
     font-size: 30px;
-    height: 100 vh;
-    width: 100%;
 }
 
 
@@ -30,7 +29,7 @@ header {
 
 header nav ul, footer nav ul {
     list-style: none;
-    font-size: 1.6vw;
+    font-size: 40px;
 }
 
 header nav ul li, footer nav ul li {
@@ -106,7 +105,7 @@ header a:hover, footer a:hover{
     text-align: center;
     color: var(--primary-color);
     font-size: 40px;
-    width: 450px;
+    width: 400px;
     border-right: solid 5px;
 }
 .container-2 {
@@ -115,6 +114,7 @@ header a:hover, footer a:hover{
     flex-wrap: wrap;
     justify-content: flex-end;
     position: relative;
+    margin-left: 200px;
 }
 h3 {
     position: absolute;
@@ -131,21 +131,22 @@ h4 {
     background-color: var(--primary-color);
     background-size: cover;
 }
+/*position image and text for surf-report*/
 .surf-report img {
-    width: 1440px;
+    width: 1400px;
     height: 300px;
     object-fit: cover;
-    margin-left: 500px;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 .surf-report h3 {
-    left: 500px;
-    bottom: 750px;
+    left: 20px;
+    bottom: 700px;
 }
 .surf-report h4 {
-    left: 500px;
-    bottom:725px;
+    left: 20px;
+    bottom:670px;
 }
+/* positioning images and texts for the remainder */
 .led-wall img, .calculator img, .pastel-puzzle img, .run-buddy img {
     width: 700px;
     height: 300px;
@@ -153,36 +154,36 @@ h4 {
     padding: 15px;
 }
 .led-wall h3 {
-    left: 505px;
+    left: 25px;
     bottom: 400px;
 }
 .led-wall h4 {
-    left: 505px;
+    left: 25px;
     bottom: 375px;
 }
 .calculator h3 {
-    right: 515px;
+    left: 730px;
     bottom: 400px;
 }
 .calculator h4 {
-    left: 1235px;
+    left: 730px;
     bottom: 375px;
 }
 .pastel-puzzle h3 {
-    left: 505px;
-    bottom: 50px;
+    left: 25px;
+    bottom: 75px;
 }
 .pastel-puzzle h4 {
-    left: 505px;
-    bottom: 25px;
-}
-.run-buddy h3 {
-    right:501px;
+    left: 25px;
     bottom: 50px;
 }
+.run-buddy h3 {
+    left: 730px;
+    bottom: 75px;
+}
 .run-buddy h4 {
-    right: 565px;
-    bottom: 25px;
+    left: 730px;
+    bottom: 50px;
 }
 .container-2 img:hover {
     opacity: 50%;
@@ -200,8 +201,32 @@ background-color: var(--background-color);
 footer h2 {
     padding: 20px 0;
 }
-@media screen and (min-width: 756px) {
-    .container-4 {
+@media screen and (max-width: 768px) {
+    .container-2 {
         flex-direction: column;
+    }
+    header {
+        padding-bottom: 0;
+        justify-content: flex-start;
+        position: relative;
+        font-size: 50%;
+    }    
+    header h1 {
+        width: 100%;
+        text-align: left;
+        padding: 0;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    footer h2, footer nav {
+        text-align: left;
+        width: 100%;
+        font-size: 50%;
     }
 }
