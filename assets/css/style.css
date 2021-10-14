@@ -33,7 +33,7 @@ header nav ul, footer nav ul {
 
 header nav ul li, footer nav ul li {
     display: inline-block;
-    padding: 50px;
+    padding: 40px;
 }
 
 header a, footer a {
@@ -106,19 +106,16 @@ header a:hover, footer a:hover{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 500px;
+    justify-content: flex-end;
 ;
 }
 h3 {
-    position:absolute;
     font-size: 35px;
     color: var(--secondary-color);
     background-color: var(--primary-color);
     background-size: cover;
 }
 h4 {
-    position:absolute;
     font-size: 25px;
     color: var(--secondary-color);
     background-color: var(--primary-color);
@@ -128,20 +125,20 @@ h4 {
     flex-basis: calc(100% - 30px);
 }
 .surf-report img {
-    width: 1600px;
+    width: 1650px;
     height: 300px;
     object-fit: cover;
-    object-position: 70%;
+    margin-left: 650px;
 }
 .led-wall img, .calculator img, .pastel-puzzle img, .run-buddy img {
     width: 800px;
     height: 300px;
     object-fit: cover;
-    flex: 0 50% 0;
+    padding: 25px;
 }
 .container-2 img:hover {
     opacity: 50%;
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 /* Footer section - remainder with header */
 footer {
