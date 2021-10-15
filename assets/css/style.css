@@ -12,7 +12,7 @@
 }
 
 body {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 /*Header styles begin*/
@@ -25,12 +25,13 @@ header {
     background-color: var(--background-color);
 }
 header h1{
-    font-size: 50px;
+    font-size: 40px;
     align-self: center;
     justify-content: center;
 }
 header nav ul, footer nav ul {
     list-style: none;
+    font-size: 25px;
 }
 
 header nav ul li, footer nav ul li {
@@ -72,14 +73,15 @@ header a:hover, footer a:hover{
 
 .container-1 img {
     width: 500px;
-    height: 600px;
-    padding: 50px 100px;
+    height: 500px;
+    padding: 50px;
 }
 
 .container-1 h2 {
     display:flex;
     justify-content: flex-start;
     align-items: center;
+    text-align: center;
     color: var(--primary-color);
     font-size: 50px;
     padding: 100px;
@@ -135,7 +137,7 @@ header a:hover, footer a:hover{
 }
 h3 {
     position: absolute;
-    font-size: 35px;
+    font-size: 25px;
     color: var(--secondary-color);
     background-color: var(--primary-color);
     background-size: cover;
@@ -143,20 +145,19 @@ h3 {
 }
 h4 {
     position: absolute;
-    font-size: 25px;
     color: var(--secondary-color);
     background-color: var(--primary-color);
     background-size: cover;
 }
 
-/* positioning images and texts for the remainder */
+/* positioning images and texts for the work section */
 .surf-report h3 {
     left:25px;
     bottom: 680px;
 }
 .surf-report h4 {
     left: 25px;
-    bottom: 655px;
+    bottom: 660px;
 }
 .led-wall h3 {
     left: 25px;
@@ -164,15 +165,15 @@ h4 {
 }
 .led-wall h4 {
     left: 25px;
-    bottom: 355px;
+    bottom: 360px;
 }
 .calculator h3 {
-    left: 500px;
+    left: 610px;
     bottom: 380px;
 }
 .calculator h4 {
-    left: 500px;
-    bottom: 355px;
+    left: 610px;
+    bottom: 360px;
 }
 .pastel-puzzle h3 {
     left: 25px;
@@ -180,17 +181,16 @@ h4 {
 }
 .pastel-puzzle h4 {
     left: 25px;
-    bottom: 50px;
+    bottom: 55px;
 }
 .run-buddy h3 {
-    left: 500px;
+    left: 610px;
     bottom: 75px;
 }
 .run-buddy h4 {
-    left: 500px;
-    bottom: 50px;
+    left: 610px;
+    bottom: 55px;
 } 
-
 .container-2 img:hover {
     opacity: 50%;
     transform: scale(1.01);
@@ -198,23 +198,20 @@ h4 {
 
 /* Footer section - remainder with header */
 footer {
-color: var(--primary-color);
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-background-color: var(--background-color);
+    color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--background-color);
 }
 footer h2 {
     align-self: center;
 }
 @media screen and (max-width: 768px) {
-    .container-2 {
-        flex-direction: column;
-    }
+    /*header section*/
     header {
         padding-bottom: 0;
         position: relative;
-        font-size: 40%;
     }    
     header h1 {
         width: 100%;
@@ -224,12 +221,9 @@ footer h2 {
     }
     header nav ul {
         width: 100%;
-        justify-content: flex-end;
-        flex-wrap: wrap;
+        font-size: 15px;
     }
-    header nav ul li a {
-        font-size: 20px;
-    }
+    /* image bar */
     .image {
         height: 100px;
     }
@@ -238,26 +232,47 @@ footer h2 {
         top: 175px;
         right: 450px;
     }
+    /*about me section*/
     .container-1 {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         margin: 0;
         padding: 0;
-        font-size: 50%;
-        align-self: flex-start;
+        font-size: 80%;
+        justify-content: space-evenly;
     }
     .container-1 p {
         padding: 0;
     }
+    .container-1 h2 {
+        font-size: 20px;
+        padding: 0px;
+        justify-content: flex-start;
+        border-right: none;
+    }
+    .container-1 img {
+        height: 300px;
+        width: 200px;
+    }
+
+    /*work section*/
     .container-4 {
         max-width: 400px;
+    }
+    .container-3 {
+        font-size: 20px;
+        border-right: none;
+        border-bottom: solid;
     }
     .container-4 h3, .container-4 h4 {
         left:20px;
         font-size: 70%;
     }
+    .container-2 {
+        flex-direction: column;
+    }
     .surf-report h4 {
-        bottom: 1275px;
+        bottom: 1285px;
     }
     .surf-report h3 {
         bottom: 1300px;
@@ -266,23 +281,26 @@ footer h2 {
         bottom: 1000px;
     }
     .led-wall h4 {
-        bottom: 975px;
+        bottom: 985px;
     }
     .calculator h3 {
         bottom: 700px;
     }
     .calculator h4 {
-        bottom: 675px;
+        bottom: 685px;
     }
    .pastel-puzzle h3 {
        bottom: 400px;
    }
    .pastel-puzzle h4 {
-       bottom: 375px;
+       bottom: 385px;
    }
-    footer h2, footer nav {
+    footer h2 {
         text-align: left;
         width: 100%;
+        font-size: 20px;
+    }
+    footer nav ul {
         font-size: 50%;
     }
 }
