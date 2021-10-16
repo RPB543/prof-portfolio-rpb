@@ -83,15 +83,12 @@ header a:hover, footer a:hover{
     align-items: center;
     text-align: center;
     color: var(--primary-color);
-    font-size: 50px;
     padding: 100px;
     width: 1500px;
-    border-right: solid 5px;
 }
 
 .container-1 p {
     align-self: center;
-    padding-left: 100px;
 }
 
 /* work example section*/
@@ -102,15 +99,16 @@ header a:hover, footer a:hover{
 .container-3 {
     display: flex;
     flex: 20%;
-    align-self: center;
+    align-items: center;
+    text-align: center;
     justify-content: flex-start;
     color: var(--primary-color);
-    border-right: solid 5px;
+    padding-left: 100px;
 }
 .container-2 {
     flex: 80%;
     position: relative;
-    padding: 20px;
+    padding-left: 200px;
 }
 .row {
     display: flex;
@@ -128,12 +126,16 @@ header a:hover, footer a:hover{
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
-    flex: 10;
+    flex: 2;
 }
 .container-2 img {
     height: 300px;
     width: auto;
-    max-width: 500px;
+    max-width: fit-content;
+}
+.surf-report img {
+    width: 1500px;
+    max-width: fit-content;
 }
 h3 {
     position: absolute;
@@ -152,48 +154,48 @@ h4 {
 
 /* positioning images and texts for the work section */
 .surf-report h3 {
-    left:25px;
+    left:225px;
     bottom: 680px;
 }
 .surf-report h4 {
-    left: 25px;
+    left: 225px;
     bottom: 660px;
 }
 .led-wall h3 {
-    left: 25px;
+    left: 225px;
     bottom: 380px;
 }
 .led-wall h4 {
-    left: 25px;
+    left: 225px;
     bottom: 360px;
 }
 .calculator h3 {
-    left: 610px;
+    left: 755px;
     bottom: 380px;
 }
 .calculator h4 {
-    left: 610px;
+    left: 755px;
     bottom: 360px;
 }
 .pastel-puzzle h3 {
-    left: 25px;
+    left: 225px;
     bottom: 75px;
 }
 .pastel-puzzle h4 {
-    left: 25px;
+    left: 225px;
     bottom: 55px;
 }
 .run-buddy h3 {
-    left: 610px;
+    left: 755px;
     bottom: 75px;
 }
 .run-buddy h4 {
-    left: 610px;
+    left: 755px;
     bottom: 55px;
 } 
 .container-2 img:hover {
     opacity: 50%;
-    transform: scale(1.01);
+    transform: scale(1.05);
 } 
 
 /* Footer section - remainder with header */
@@ -210,8 +212,9 @@ footer h2 {
 @media screen and (max-width: 768px) {
     /*header section*/
     header {
-        padding-bottom: 0;
+        padding: 0;
         position: relative;
+        width: 50%;
     }    
     header h1 {
         width: 100%;
@@ -221,15 +224,19 @@ footer h2 {
     }
     header nav ul {
         width: 100%;
-        font-size: 15px;
+        font-size: 13px;
+    }
+    header nav ul li, footer nav ul li {
+        padding: 5px;
     }
     /* image bar */
     .image {
         height: 100px;
+        width: 50%;
     }
     .image h2 {
-        font-size: 20px;
-        top: 175px;
+        font-size: 15px;
+        top: 100px;
         right: 450px;
     }
     /*about me section*/
@@ -243,6 +250,9 @@ footer h2 {
     }
     .container-1 p {
         padding: 0;
+        width: 50%;
+        text-align: left;
+        align-self: flex-start;
     }
     .container-1 h2 {
         font-size: 20px;
@@ -258,6 +268,7 @@ footer h2 {
     /*work section*/
     .container-4 {
         max-width: 400px;
+        justify-content: flex-start;
     }
     .container-3 {
         font-size: 20px;
@@ -270,6 +281,7 @@ footer h2 {
     }
     .container-2 {
         flex-direction: column;
+        padding: 0;
     }
     .surf-report h4 {
         bottom: 1285px;
@@ -301,6 +313,6 @@ footer h2 {
         font-size: 20px;
     }
     footer nav ul {
-        font-size: 50%;
+        font-size: 13px;
     }
 }
