@@ -33,4 +33,4 @@ Create a website to advertise personal skills and previous works to show potenti
 
 # Screenshot
 
-[Screenshot]()
+![Screenshot](./assets/images/screenshot.png)
