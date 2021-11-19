@@ -92,13 +92,13 @@ header a:hover, footer a:hover{
     padding-left: 50px;
 }
 .other img {
-    height: 500px;
+    height: 400px;
     width: auto;
     max-width: fit-content;
 }
 .surf-report img {
     height: 500px;
-    width: 1530px;
+    width: 1225px;
 }
 h3 {
     position: absolute;
@@ -133,11 +133,11 @@ h4 {
     bottom: 20px;
 }
 .calculator h3 {
-    left: 825px;
+    left: 675px;
     bottom: 50px;
 }
 .calculator h4 {
-    left: 825px;
+    left: 675px;
     bottom: 20px;
 }
 .pastel-puzzle h3 {
@@ -149,11 +149,11 @@ h4 {
     bottom: 20px;
 }
 .run-buddy h3 {
-    left: 825px;
+    left: 675px;
     bottom: 50px;
 }
 .run-buddy h4 {
-    left: 825px;
+    left: 675px;
     bottom: 20px;
 } 
 .container-2 img:hover {
@@ -172,6 +172,8 @@ footer {
 footer h2 {
     align-self: center;
 }
+
+/* reformatting for smaller screens */
 @media screen and (max-width: 768px) {
     /*header section*/
     header {
@@ -242,8 +244,9 @@ footer h2 {
         font-size: 70%;
     }
     .other img, .surf-report img {
-        width: 400px;
-        margin-left: 100px;
+        width: 300px;
+        height:auto;
+        margin-left: 50px;
         justify-content: end;
     }
     .container-2 {
@@ -251,11 +254,12 @@ footer h2 {
         padding: 0;
     }
     .surf-report h4 {
-        bottom: 50px;
-        left: 50px;
+        bottom: 30px;
+        left: 80px;
     }
     .surf-report h3 {
-        bottom: 30px;
+        bottom: 50px;
+        left: 80px;
     }
     .led-wall h3 {
         bottom: 600px;
